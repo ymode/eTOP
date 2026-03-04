@@ -84,7 +84,7 @@ def format_uptime(ms):
 
 
 def read_temp():
-    """Read internal temperature sensor (RP2350)."""
+    """Read internal temperature sensor."""
     # ADC(4) doesn't work on RP2350 — use ADC.CORE_TEMP instead
     try:
         sensor = machine.ADC(machine.ADC.CORE_TEMP)
